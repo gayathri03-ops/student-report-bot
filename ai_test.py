@@ -7,3 +7,6 @@ print("Generated SQL:", sql)
 
 result = run_query(sql)
 print("Result:", result)
+from tabulate import tabulate
+
+print(tabulate(result, headers="keys", tablefmt="grid"))

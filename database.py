@@ -20,10 +20,11 @@ print("Database created successfully!")
 # insert sample data
 students_data = [
     (1, "Gayathri", 85, 90),
-    (2, "Arun", 78, 85),
-    (3, "Priya", 92, 95),
-    (4, "Karthik", 70, 80),
-    (5, "Meena", 88, 92)
+    (2, "Ashok", 78, 85),
+    (3, "Prashika", 92, 95),
+    (4, "Karthikesh", 70, 80),
+    (5, "Dineshkumar", 88, 92),
+    (6, "Mabhu", 70,60)
 ]
 
 cursor.executemany(

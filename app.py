@@ -1,20 +1,33 @@
 import streamlit as st
-from queries import *
+from ai_query import generate_sql, run_query
 
-st.title("🎓 Student Result Query Bot")
+st.title("Student Report Bot")
 
-question = st.text_input("Ask your question:")
+question = st.text_input("Ask your question")
 
-if question:
-    if "all students" in question.lower():
-        st.write(get_all_students())
+if st.button("Run"):
+    sql = generate_sql(question)
+    st.write("SQL:", sql)
 
-    elif "marks of" in question.lower():
-        name = question.split("marks of")[-1].strip().capitalize()
-        st.write(get_student_marks(name))
+    result = run_query(sql)
+    st.write("Result:", result)
+# import streamlit as st
+# from queries import *
 
-    elif "high scorers" in question.lower():
-        st.write(get_high_scorers())
+# st.title("Student Result Query Bot")
 
-    else:
-        st.write("Sorry, I don't understand the question.")
+# question = st.text_input("Ask your question:")
+
+# if question:
+#     if "all students" in question.lower():
+#         st.write(get_all_students())
+
+#     elif "marks of" in question.lower():
+#         name = question.split("marks of")[-1].strip().capitalize()
+#         st.write(get_student_marks(name))
+
+#     elif "high scorers" in question.lower():
+#         st.write(get_high_scorers())
+
+#     else:
+#         st.write("Sorry, I don't understand the question.")
