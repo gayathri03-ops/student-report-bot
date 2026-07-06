@@ -1,0 +1,21 @@
+reg_no,name,department,semester,subject1_name,subject1_marks,subject2_name,subject2_marks,subject3_name,subject3_marks,subject4_name,subject4_marks,subject5_name,subject5_marks,attendance_percent
+411723106001,Aarav Kumar,ECE,3,Circuit Theory,78,Digital Electronics,82,Signals and Systems,65,Data Structures,90,Engineering Maths,71,92
+411723106002,Bhavya Sri,ECE,3,Circuit Theory,55,Digital Electronics,60,Signals and Systems,48,Data Structures,72,Engineering Maths,58,85
+411723106003,Charan Raj,ECE,3,Circuit Theory,88,Digital Electronics,91,Signals and Systems,84,Data Structures,95,Engineering Maths,89,97
+411723106004,Divya Lakshmi,ECE,3,Circuit Theory,45,Digital Electronics,38,Signals and Systems,50,Data Structures,60,Engineering Maths,42,68
+411723106005,Eswar Prasad,ECE,3,Circuit Theory,70,Digital Electronics,74,Signals and Systems,68,Data Structures,80,Engineering Maths,66,88
+411723106006,Farida Begum,ECE,3,Circuit Theory,92,Digital Electronics,88,Signals and Systems,90,Data Structures,94,Engineering Maths,91,95
+411723106007,Gokul Nath,ECE,3,Circuit Theory,60,Digital Electronics,55,Signals and Systems,58,Data Structures,65,Engineering Maths,52,75
+411723106008,Harini Devi,ECE,3,Circuit Theory,35,Digital Electronics,40,Signals and Systems,30,Data Structures,45,Engineering Maths,38,60
+411723106009,Ishaan Verma,ECE,3,Circuit Theory,81,Digital Electronics,79,Signals and Systems,75,Data Structures,85,Engineering Maths,80,90
+411723106010,Janani Priya,ECE,3,Circuit Theory,67,Digital Electronics,70,Signals and Systems,62,Data Structures,73,Engineering Maths,69,82
+411723106011,Karthik Raja,ECE,3,Circuit Theory,50,Digital Electronics,45,Signals and Systems,52,Data Structures,58,Engineering Maths,48,70
+411723106012,Lavanya Shree,ECE,3,Circuit Theory,95,Digital Electronics,93,Signals and Systems,89,Data Structures,97,Engineering Maths,92,98
+411723106013,Manoj Kumar,ECE,3,Circuit Theory,42,Digital Electronics,35,Signals and Systems,40,Data Structures,50,Engineering Maths,38,55
+411723106014,Nandini Ravi,ECE,3,Circuit Theory,73,Digital Electronics,76,Signals and Systems,70,Data Structures,78,Engineering Maths,74,87
+411723106015,Om Prakash,ECE,3,Circuit Theory,62,Digital Electronics,58,Signals and Systems,60,Data Structures,66,Engineering Maths,63,79
+411723106016,Priya Dharshini,ECE,3,Circuit Theory,85,Digital Electronics,87,Signals and Systems,82,Data Structures,90,Engineering Maths,86,93
+411723106017,Rahul Dev,ECE,3,Circuit Theory,38,Digital Electronics,42,Signals and Systems,35,Data Structures,48,Engineering Maths,40,58
+411723106018,Sneha Rani,ECE,3,Circuit Theory,77,Digital Electronics,80,Signals and Systems,72,Data Structures,84,Engineering Maths,75,89
+411723106019,Tarun Kumar,ECE,3,Circuit Theory,58,Digital Electronics,52,Signals and Systems,55,Data Structures,60,Engineering Maths,50,72
+411723106020,Uma Maheswari,ECE,3,Circuit Theory,90,Digital Electronics,94,Signals and Systems,88,Data Structures,96,Engineering Maths,93,96

@@ -1,4 +1,5 @@
-venv/
 __pycache__/
-.env
-*.db
+*.pyc
+venv/
+data/students.db
+data/saved_prompts.json

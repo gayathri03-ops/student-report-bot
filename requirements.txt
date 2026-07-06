@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+streamlit
+pandas
+requests
+pydantic
+ 
+# Week 2: retrieval layer (TF-IDF backend -- works offline, no model download)
+scikit-learn
+ 
+# Optional (only needed if you enable LLM-assisted parsing/explanation
+# by setting the OPENAI_API_KEY environment variable):
+langchain-openai
+langchain-core
+ 
+# Optional upgrade path for Week 2 retrieval (real embeddings + FAISS).
+# If these are installed, retrieval.py automatically uses them instead
+# of TF-IDF. Not required for the app to work.
+# sentence-transformers
+# faiss-cpu
