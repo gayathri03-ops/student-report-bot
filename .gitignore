@@ -3,3 +3,6 @@ __pycache__/
 venv/
 data/students.db
 data/saved_prompts.json
+data/vector_store/
+data/interaction_log.jsonl
+docs/demo_script.md

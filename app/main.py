@@ -1,18 +1,8 @@
-"""
-main.py
--------
-FastAPI backend exposing the Student Result Query Bot as an API.
- 
-Run with:
-    uvicorn app.main:app --reload
-Then visit http://127.0.0.1:8000/docs for the interactive API docs.
-"""
- 
 from fastapi import FastAPI
 from pydantic import BaseModel
  
 from app.bot import answer_question
-from app import safe_query, db_setup, retrieval
+from app import safe_query, db_setup, retrieval, logging_store
  
 app = FastAPI(
     title="Student Result Query Bot",
@@ -24,6 +14,8 @@ app = FastAPI(
  
 class QueryRequest(BaseModel):
     question: str
+    role: str = "admin"          # "student" or "admin" (Week 3 access control)
+    own_reg_no: str | None = None  # required if role == "student"
  
  
 class QueryResponse(BaseModel):
@@ -39,13 +31,19 @@ def health_check():
  
 @app.post("/query", response_model=QueryResponse)
 def query(request: QueryRequest):
-    result = answer_question(request.question)
+    result = answer_question(request.question, role=request.role, own_reg_no=request.own_reg_no)
     return result
  
  
 @app.get("/summary")
 def summary():
     return safe_query.get_class_performance_summary()
+ 
+ 
+@app.get("/history")
+def history(limit: int = 20):
+    """Week 3: view recent question/answer interaction history."""
+    return logging_store.read_recent_interactions(limit=limit)
  
  
 @app.post("/admin/refresh")
@@ -60,4 +58,3 @@ def admin_refresh():
         "database": "rebuilt from data/students.csv",
         "retrieval_index": index_status,
     }
- 
