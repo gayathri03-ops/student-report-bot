@@ -45,13 +45,6 @@ SQL-injection surface even though the bot is "schema-aware."
    streamlit run streamlit_app.py
 ```
 
-6. **(Optional) Enable LLM-assisted parsing/explanation**
-```bash
-   export OPENAI_API_KEY=your_key_here   # Windows: set OPENAI_API_KEY=...
-```
-   Without this, the bot still works fully using rule-based parsing —
-   no API key or internet connection is required for the core features.
-
 ## Sample Questions to Try
 
 - "What is the result for 411723106003?"
